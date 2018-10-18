@@ -62,20 +62,11 @@
 <library name="Personal">
 <packages>
 <package name="SOT23-5">
-<smd name="1" x="1.95" y="0" dx="0.9" dy="0.4" layer="1" rot="R90"/>
-<smd name="2" x="1.3" y="0" dx="0.9" dy="0.4" layer="1" rot="R90"/>
-<smd name="3" x="0.65" y="0" dx="0.9" dy="0.4" layer="1" rot="R90"/>
-<smd name="4" x="0.65" y="-2.2" dx="0.9" dy="0.4" layer="1" rot="R90"/>
-<smd name="5" x="1.95" y="-2.2" dx="0.9" dy="0.4" layer="1" rot="R90"/>
-<circle x="2.7" y="0.3" radius="0.2" width="0.1" layer="21"/>
-<wire x1="2.5" y1="-0.2" x2="3" y2="-0.2" width="0.127" layer="21"/>
-<wire x1="3" y1="-0.2" x2="3" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-2.5" x2="3" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="3" y1="-2.5" x2="3" y2="-2.2" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-2.5" x2="-0.2" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-2.5" x2="-0.2" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-0.2" x2="-0.2" y2="-0.2" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-0.2" x2="-0.2" y2="-0.5" width="0.127" layer="21"/>
+<smd name="1" x="1.9" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="4" x="0" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="5" x="1.9" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
