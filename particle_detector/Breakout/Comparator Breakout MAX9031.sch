@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -62,11 +62,11 @@
 <library name="Personal">
 <packages>
 <package name="SOT23-5">
-<smd name="1" x="1.9" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="3" x="0" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="4" x="0" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="5" x="1.9" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="1" x="1.9" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="4" x="0" y="-2.4286" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="5" x="1.9" y="-2.4286" dx="1.27" dy="0.65" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>

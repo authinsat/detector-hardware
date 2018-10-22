@@ -4593,11 +4593,11 @@ Source: AVX .. aphvc.pdf</description>
 <library name="Personal">
 <packages>
 <package name="SOT23-5">
-<smd name="1" x="1.9" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="2" x="0.95" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="3" x="0" y="0" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="4" x="0" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
-<smd name="5" x="1.9" y="-2.2" dx="1.06" dy="0.65" layer="1" rot="R90"/>
+<smd name="1" x="1.9" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="4" x="0" y="-2.4286" dx="1.27" dy="0.65" layer="1" rot="R90"/>
+<smd name="5" x="1.9" y="-2.4286" dx="1.27" dy="0.65" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
