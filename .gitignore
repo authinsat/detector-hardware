@@ -1,3 +1,7 @@
 # ignore EAGLE-generated autosave files
 *.s#*
 *.b#*
+*.l#*
+
+# ignore zips
+*.zip
