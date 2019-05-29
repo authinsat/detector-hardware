@@ -8011,7 +8011,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </package>
 <package name="TEENSY_3.2_THINSAT">
 <pad name="GND" x="-7.62" y="16.51" drill="0.9652"/>
-<pad name="6" x="-7.62" y="-1.27" drill="0.9652"/>
 <pad name="7" x="-7.62" y="-3.81" drill="0.9652"/>
 <pad name="8" x="-7.62" y="-6.35" drill="0.9652"/>
 <pad name="16/A2" x="7.62" y="-8.89" drill="0.9652"/>
@@ -8030,6 +8029,8 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <text x="-3.81" y="13.97" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="5.08" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <pad name="VIN" x="7.62" y="16.51" drill="0.9652"/>
+<pad name="0" x="-7.62" y="13.97" drill="0.9652"/>
+<pad name="1" x="-7.62" y="11.43" drill="0.9652"/>
 </package>
 <package name="XBUS_2X05_PAD">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -8113,7 +8114,6 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="-17.78" y1="33.02" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
 <pin name="8/TX3" x="-22.86" y="7.62" visible="pin" length="middle"/>
 <pin name="7/RX3" x="-22.86" y="10.16" visible="pin" length="middle"/>
-<pin name="6/PWM" x="-22.86" y="12.7" visible="pin" length="middle"/>
 <pin name="GND" x="22.86" y="20.32" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <pin name="AGND" x="22.86" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <pin name="3.3V" x="22.86" y="25.4" visible="pin" length="middle" direction="pwr" rot="R180"/>
@@ -8121,9 +8121,11 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pin name="18/A4/T/SDA0" x="-22.86" y="-17.78" visible="pin" length="middle"/>
 <pin name="17/A3/T" x="-22.86" y="-15.24" visible="pin" length="middle"/>
 <pin name="16/A2/T" x="-22.86" y="-12.7" visible="pin" length="middle"/>
-<text x="-5.588" y="34.29" size="2.032" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.334" y="-38.1" size="2.032" layer="96" font="vector">&gt;VALUE</text>
+<text x="-5.588" y="34.29" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.334" y="-38.1" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VIN" x="22.86" y="27.94" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="0/RX1/T" x="-22.86" y="27.94" visible="pin" length="middle"/>
+<pin name="1/TX1/T" x="-22.86" y="25.4" visible="pin" length="middle"/>
 </symbol>
 <symbol name="XBUS-10">
 <wire x1="-6.35" y1="-22.86" x2="1.27" y2="-22.86" width="0.4064" layer="94"/>
@@ -8221,12 +8223,13 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD746.pdf</descr
 <devices>
 <device name="" package="TEENSY_3.2_THINSAT">
 <connects>
+<connect gate="G$1" pin="0/RX1/T" pad="0"/>
+<connect gate="G$1" pin="1/TX1/T" pad="1"/>
 <connect gate="G$1" pin="16/A2/T" pad="16/A2"/>
 <connect gate="G$1" pin="17/A3/T" pad="17/A3"/>
 <connect gate="G$1" pin="18/A4/T/SDA0" pad="18/A4"/>
 <connect gate="G$1" pin="19/A5/T/SCL0" pad="19/A5"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="6/PWM" pad="6"/>
 <connect gate="G$1" pin="7/RX3" pad="7"/>
 <connect gate="G$1" pin="8/TX3" pad="8"/>
 <connect gate="G$1" pin="AGND" pad="AGND"/>
@@ -20088,8 +20091,8 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <attribute name="VALUE" x="238.76" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC4" gate="G$1" x="86.36" y="218.44" smashed="yes">
-<attribute name="NAME" x="80.772" y="252.73" size="1.27" layer="95" font="vector" ratio="15"/>
-<attribute name="VALUE" x="83.566" y="180.34" size="1.27" layer="96" font="vector" ratio="15"/>
+<attribute name="NAME" x="80.772" y="252.73" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.566" y="180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="GND22" gate="VR1" x="38.1" y="187.96" smashed="yes">
 <attribute name="VALUE" x="35.56" y="182.88" size="1.778" layer="96" rot="R90"/>
