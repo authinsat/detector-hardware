@@ -19940,9 +19940,9 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="152.4" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="276.86" y1="162.56" x2="276.86" y2="220.98" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="276.86" y1="220.98" x2="152.4" y2="220.98" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="312.42" y1="261.62" x2="370.84" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="370.84" y1="261.62" x2="370.84" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="370.84" y1="200.66" x2="312.42" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="312.42" y1="261.62" x2="388.62" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="388.62" y1="261.62" x2="388.62" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="388.62" y1="200.66" x2="312.42" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="312.42" y1="200.66" x2="312.42" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
 <text x="210.82" y="215.9" size="2.54" layer="98" align="bottom-center">Detector</text>
 <text x="342.9" y="256.54" size="2.54" layer="98" align="bottom-center">Xinabox Headers</text>
@@ -20489,13 +20489,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <junction x="38.1" y="205.74"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="IC4" gate="G$1" pin="VIN"/>
-<wire x1="109.22" y1="246.38" x2="114.3" y2="246.38" width="0.1524" layer="91"/>
-<label x="114.3" y="246.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="18/A4/T/SDA0"/>
@@ -20531,16 +20524,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 </net>
 <net name="3.3V" class="0">
-<segment>
-<pinref part="XBUS1" gate="G$1" pin="3.3V"/>
-<wire x1="332.74" y1="238.76" x2="327.66" y2="238.76" width="0.1524" layer="91"/>
-<label x="327.66" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="IC4" gate="G$1" pin="3.3V"/>
-<wire x1="109.22" y1="243.84" x2="114.3" y2="243.84" width="0.1524" layer="91"/>
-<label x="114.3" y="243.84" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
 <wire x1="218.44" y1="71.12" x2="218.44" y2="73.66" width="0.1524" layer="91"/>
@@ -20591,23 +20574,6 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <label x="93.98" y="93.98" size="1.27" layer="95" xref="yes"/>
 <wire x1="45.72" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="XBUS2" gate="G$1" pin="3.3V"/>
-<wire x1="332.74" y1="210.82" x2="327.66" y2="210.82" width="0.1524" layer="91"/>
-<label x="327.66" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="VBAT" class="0">
-<segment>
-<pinref part="XBUS1" gate="G$1" pin="VBAT"/>
-<wire x1="332.74" y1="236.22" x2="327.66" y2="236.22" width="0.1524" layer="91"/>
-<label x="327.66" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="XBUS2" gate="G$1" pin="VBAT"/>
-<wire x1="332.74" y1="208.28" x2="327.66" y2="208.28" width="0.1524" layer="91"/>
-<label x="327.66" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AGND" class="0">
@@ -20744,6 +20710,57 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="IC4" gate="G$1" pin="16/A2/T"/>
 <wire x1="50.8" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="0/RX1/T"/>
+<wire x1="63.5" y1="246.38" x2="60.96" y2="246.38" width="0.1524" layer="91"/>
+<label x="60.96" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XBUS1" gate="G$1" pin="RX"/>
+<wire x1="358.14" y1="241.3" x2="363.22" y2="241.3" width="0.1524" layer="91"/>
+<label x="363.22" y="241.3" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XBUS2" gate="G$1" pin="RX"/>
+<wire x1="358.14" y1="213.36" x2="363.22" y2="213.36" width="0.1524" layer="91"/>
+<label x="363.22" y="213.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TX" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="1/TX1/T"/>
+<wire x1="63.5" y1="243.84" x2="60.96" y2="243.84" width="0.1524" layer="91"/>
+<label x="60.96" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XBUS1" gate="G$1" pin="TX"/>
+<wire x1="358.14" y1="238.76" x2="363.22" y2="238.76" width="0.1524" layer="91"/>
+<label x="363.22" y="238.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XBUS2" gate="G$1" pin="TX"/>
+<wire x1="358.14" y1="210.82" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
+<label x="363.22" y="210.82" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="XBUS1" gate="G$1" pin="VBAT"/>
+<wire x1="332.74" y1="236.22" x2="327.66" y2="236.22" width="0.1524" layer="91"/>
+<label x="327.66" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="XBUS2" gate="G$1" pin="VBAT"/>
+<wire x1="332.74" y1="208.28" x2="327.66" y2="208.28" width="0.1524" layer="91"/>
+<label x="327.66" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="VIN"/>
+<wire x1="109.22" y1="246.38" x2="114.3" y2="246.38" width="0.1524" layer="91"/>
+<label x="114.3" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
