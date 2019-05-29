@@ -8036,16 +8036,16 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <text x="-4.1562" y="1.9088" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="1" x="-4" y="0" dx="1" dy="3" layer="1"/>
-<smd name="2" x="-2" y="0" dx="1" dy="3" layer="1"/>
+<smd name="1" x="4" y="0" dx="1" dy="3" layer="1"/>
+<smd name="2" x="2" y="0" dx="1" dy="3" layer="1"/>
 <smd name="3" x="0" y="0" dx="1" dy="3" layer="1"/>
-<smd name="4" x="2" y="0" dx="1" dy="3" layer="1"/>
-<smd name="5" x="4" y="0" dx="1" dy="3" layer="1"/>
-<smd name="6" x="-4" y="0" dx="1" dy="3" layer="16" rot="R180"/>
-<smd name="7" x="-2" y="0" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="4" x="-2" y="0" dx="1" dy="3" layer="1"/>
+<smd name="5" x="-4" y="0" dx="1" dy="3" layer="1"/>
+<smd name="6" x="4" y="0" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="7" x="2" y="0" dx="1" dy="3" layer="16" rot="R180"/>
 <smd name="8" x="0" y="0" dx="1" dy="3" layer="16" rot="R180"/>
-<smd name="9" x="2" y="0" dx="1" dy="3" layer="16" rot="R180"/>
-<smd name="10" x="4" y="0" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="9" x="-2" y="0" dx="1" dy="3" layer="16" rot="R180"/>
+<smd name="10" x="-4" y="0" dx="1" dy="3" layer="16" rot="R180"/>
 </package>
 <package name="MICROFC-60035">
 <wire x1="-1.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
@@ -8128,22 +8128,24 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <pin name="1/TX1/T" x="-22.86" y="25.4" visible="pin" length="middle"/>
 </symbol>
 <symbol name="XBUS-10">
-<wire x1="-6.35" y1="-22.86" x2="1.27" y2="-22.86" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-22.86" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="7.62" x2="-6.35" y2="-22.86" width="0.4064" layer="94"/>
-<text x="-6.35" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SCL" x="-2.54" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="SDA" x="-2.54" y="2.54" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GND" x="-2.54" y="0" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="3.3V" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="VBAT" x="-2.54" y="-5.08" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="RESET" x="-2.54" y="-10.16" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="PROG" x="-2.54" y="-12.7" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="RX" x="-2.54" y="-15.24" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="TX" x="-2.54" y="-17.78" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="VRAW" x="-2.54" y="-20.32" visible="pin" length="short" direction="pas" function="dot"/>
+<wire x1="-13.97" y1="-7.62" x2="13.97" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="13.97" y1="-7.62" x2="13.97" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="13.97" y1="10.16" x2="-13.97" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-13.97" y1="10.16" x2="-13.97" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="11.176" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SCL" x="-12.7" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="SDA" x="-12.7" y="2.54" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GND" x="-12.7" y="0" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="3.3V" x="-12.7" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="VBAT" x="-12.7" y="-5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="RESET" x="12.7" y="5.08" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="PROG" x="12.7" y="2.54" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="RX" x="12.7" y="0" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="TX" x="12.7" y="-2.54" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="VRAW" x="12.7" y="-5.08" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.778" layer="97">Top</text>
+<text x="0" y="7.62" size="1.778" layer="97">Bottom</text>
 </symbol>
 <symbol name="SIPM">
 <pin name="CATHODE" x="-17.78" y="7.62" visible="pin" length="middle"/>
@@ -19938,12 +19940,12 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <wire x1="152.4" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="276.86" y1="162.56" x2="276.86" y2="220.98" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="276.86" y1="220.98" x2="152.4" y2="220.98" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="312.42" y1="261.62" x2="386.08" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="386.08" y1="261.62" x2="386.08" y2="162.56" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="386.08" y1="162.56" x2="312.42" y2="162.56" width="0.1524" layer="98" style="shortdash"/>
-<wire x1="312.42" y1="162.56" x2="312.42" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="312.42" y1="261.62" x2="370.84" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="370.84" y1="261.62" x2="370.84" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="370.84" y1="200.66" x2="312.42" y2="200.66" width="0.1524" layer="98" style="shortdash"/>
+<wire x1="312.42" y1="200.66" x2="312.42" y2="261.62" width="0.1524" layer="98" style="shortdash"/>
 <text x="210.82" y="215.9" size="2.54" layer="98" align="bottom-center">Detector</text>
-<text x="347.98" y="256.54" size="2.54" layer="98" align="bottom-center">I2C and Xinabox Header</text>
+<text x="342.9" y="256.54" size="2.54" layer="98" align="bottom-center">Xinabox Headers</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -20100,9 +20102,9 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <instance part="GND23" gate="1" x="111.76" y="233.68" smashed="yes">
 <attribute name="VALUE" x="109.22" y="231.14" size="1.778" layer="96"/>
 </instance>
-<instance part="XBUS1" gate="G$1" x="373.38" y="241.3" smashed="yes">
-<attribute name="NAME" x="367.03" y="249.555" size="1.778" layer="95"/>
-<attribute name="VALUE" x="367.03" y="215.9" size="1.778" layer="96"/>
+<instance part="XBUS1" gate="G$1" x="345.44" y="241.3" smashed="yes">
+<attribute name="NAME" x="341.63" y="252.095" size="1.778" layer="95"/>
+<attribute name="VALUE" x="339.09" y="215.9" size="1.778" layer="96"/>
 </instance>
 <instance part="AGND1" gate="VR1" x="111.76" y="220.98" smashed="yes">
 <attribute name="VALUE" x="109.22" y="215.9" size="1.778" layer="96" rot="R90"/>
@@ -20191,9 +20193,9 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 <instance part="GND19" gate="1" x="193.04" y="185.42" smashed="yes">
 <attribute name="VALUE" x="190.5" y="182.88" size="1.778" layer="96"/>
 </instance>
-<instance part="XBUS2" gate="G$1" x="373.38" y="200.66" smashed="yes">
-<attribute name="NAME" x="367.03" y="208.915" size="1.778" layer="95"/>
-<attribute name="VALUE" x="367.03" y="175.26" size="1.778" layer="96"/>
+<instance part="XBUS2" gate="G$1" x="345.44" y="213.36" smashed="yes">
+<attribute name="NAME" x="341.63" y="224.155" size="1.778" layer="95"/>
+<attribute name="VALUE" x="339.09" y="187.96" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -20250,8 +20252,8 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 <segment>
 <pinref part="XBUS1" gate="G$1" pin="GND"/>
-<wire x1="370.84" y1="241.3" x2="363.22" y2="241.3" width="0.1524" layer="91"/>
-<label x="363.22" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="241.3" x2="327.66" y2="241.3" width="0.1524" layer="91"/>
+<label x="327.66" y="241.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -20290,8 +20292,8 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 <segment>
 <pinref part="XBUS2" gate="G$1" pin="GND"/>
-<wire x1="370.84" y1="200.66" x2="363.22" y2="200.66" width="0.1524" layer="91"/>
-<label x="363.22" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="213.36" x2="327.66" y2="213.36" width="0.1524" layer="91"/>
+<label x="327.66" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="HV" class="0">
@@ -20502,13 +20504,13 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 <segment>
 <pinref part="XBUS1" gate="G$1" pin="SDA"/>
-<wire x1="370.84" y1="243.84" x2="363.22" y2="243.84" width="0.1524" layer="91"/>
-<label x="363.22" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="243.84" x2="327.66" y2="243.84" width="0.1524" layer="91"/>
+<label x="327.66" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="XBUS2" gate="G$1" pin="SDA"/>
-<wire x1="370.84" y1="203.2" x2="363.22" y2="203.2" width="0.1524" layer="91"/>
-<label x="363.22" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="215.9" x2="327.66" y2="215.9" width="0.1524" layer="91"/>
+<label x="327.66" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -20519,20 +20521,20 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 <segment>
 <pinref part="XBUS1" gate="G$1" pin="SCL"/>
-<wire x1="370.84" y1="246.38" x2="363.22" y2="246.38" width="0.1524" layer="91"/>
-<label x="363.22" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="246.38" x2="327.66" y2="246.38" width="0.1524" layer="91"/>
+<label x="327.66" y="246.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="XBUS2" gate="G$1" pin="SCL"/>
-<wire x1="370.84" y1="205.74" x2="363.22" y2="205.74" width="0.1524" layer="91"/>
-<label x="363.22" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="218.44" x2="327.66" y2="218.44" width="0.1524" layer="91"/>
+<label x="327.66" y="218.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="XBUS1" gate="G$1" pin="3.3V"/>
-<wire x1="370.84" y1="238.76" x2="363.22" y2="238.76" width="0.1524" layer="91"/>
-<label x="363.22" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="238.76" x2="327.66" y2="238.76" width="0.1524" layer="91"/>
+<label x="327.66" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="3.3V"/>
@@ -20592,20 +20594,20 @@ Source: http://www.vishay.com/docs/31059/wsrhigh.pdf</description>
 </segment>
 <segment>
 <pinref part="XBUS2" gate="G$1" pin="3.3V"/>
-<wire x1="370.84" y1="198.12" x2="363.22" y2="198.12" width="0.1524" layer="91"/>
-<label x="363.22" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="210.82" x2="327.66" y2="210.82" width="0.1524" layer="91"/>
+<label x="327.66" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="XBUS1" gate="G$1" pin="VBAT"/>
-<wire x1="370.84" y1="236.22" x2="363.22" y2="236.22" width="0.1524" layer="91"/>
-<label x="363.22" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="236.22" x2="327.66" y2="236.22" width="0.1524" layer="91"/>
+<label x="327.66" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="XBUS2" gate="G$1" pin="VBAT"/>
-<wire x1="370.84" y1="195.58" x2="363.22" y2="195.58" width="0.1524" layer="91"/>
-<label x="363.22" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="208.28" x2="327.66" y2="208.28" width="0.1524" layer="91"/>
+<label x="327.66" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AGND" class="0">
