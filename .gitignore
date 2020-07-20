@@ -5,3 +5,6 @@
 
 # ignore zips
 *.zip
+
+# ignore MacOS-generated files
+*.DS_*
